@@ -1,0 +1,44 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "C:/curl-8.10.1_7-win64-mingw/include",
+                "-I",
+                "C:/vcpkg/packages/nlohmann-json_x64-windows/include",
+                "-I",
+                "C:/vcpkg/installed/x64-windows/include",
+                "-L",
+                "C:/curl-8.10.1_7-win64-mingw/lib",
+                "-L",
+                "C:/vcpkg/installed/x64-windows/lib",
+                
+                "-lssl",
+                "-lcrypto",
+                "-lcurl",
+                "-lstdc++",
+                "-ljsoncpp"
+            ],
+            "options": {
+                "cwd": "C:/msys64/mingw64/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task by the C/C++ extension."
+        },
+    ],
+    "version": "2.0.0"
+}
